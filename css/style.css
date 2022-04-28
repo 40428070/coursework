@@ -19,34 +19,34 @@ img{
     align-items: center;
     justify-content: center;
     order: 2;
-    width: 250px;
+    width: 34%;
     
 }
 .quizz{
     align-items: center;
     justify-content: center;
     order: 2;
-    width: 500px;
+    width: 34%;
 }
 .quizzresult{
     align-items: center;
     justify-content: center;
     order: 2;
-    width: 250px;    
+    width: 34%;    
 }
 .leaderboard{
     align-items: center;
     justify-content: center;
     order: 2;
-    width: 250px;    
+    width: 34%;    
 }
 .asideL{
     order: 1;
-    width: 250px;
+    width: 33%;
 }
 .asideR{
     order: 3;
-    width: 250px;
+    width: 33%;
 }
 .btn{
     display: flex;
