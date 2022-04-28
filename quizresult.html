@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header >
+        <a id="MathMaster" href="index.html">
+            <img id="logo" src="images/logo.png">
+            Math Master
+        </a>
+        <nav>
+            <a class="nav_link" href="index.html">Home</a>
+            <a class="nav_link" href="quiz.html">Quiz</a>
+            <a class="nav_link" href="leaderboard.html">Leaderboard</a>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="quizzresult">
+            <h1 id="score">0</h1>
+            <h2>Do you want to save your score?</h2>
+            <input type="text" name="name" id="username" placeholder="Name">
+            <button class="btn" id="save" type="submit" onclick="saveResult(event)" disabled>Save</button>
+            <a href="quiz.html" class="btn">Try Again</a>
+            
+        </div>
+        <aside class="asideL">
+            <h2>Statistic</h2>
+            <h3 id="Nquestion">Number of question:</h3>
+            <h3 id="correct">Correctly answered:</h3>
+            <h3 id="missed">Question missed: </h3>
+            <h3 id="wrong">Wrong answered: </h3>
+            <h3 id="Ttime">Total time: </h3>
+            
+        </aside>
+        <aside class="asideR">
+            <canvas id = "my_canvas" width=240 height=240 ></canvas>
+        </aside>
+    </div>
+    
+    
+    <footer class="footer">contact 40428070@live.napier.ac.uk</footer>
+    <script  src="javascript/quizresult.js"></script>
+</body>
+
+</html>

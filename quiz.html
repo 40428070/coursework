@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="css/style.css">
+    <audio id="correct_answer">   
+        <source src="audio/correct_answer.mp3" />
+    </audio>   
+    <audio id="wrong_answer">   
+        <source src="audio/wrong_answer.mp3" />   
+    </audio>
+    <audio id="countdown" >   
+        <source src="audio/countdown.mp3" />   
+    </audio>
+    <body > 
+        <header >
+            <a id="MathMaster" href="index.html">
+                <img id="logo" src="images/logo.png">
+                Math Master
+            </a>
+            <nav>
+                <a class="nav_link" href="index.html">Home</a>
+                <a class="nav_link" href="quiz.html">Quiz</a>
+                <a class="nav_link" href="leaderboard.html">Leaderboard</a>
+            </nav>
+        </header>
+        
+        <div class="container">
+            <main class="quizz">
+                
+                
+           
+            <h1 id="question">
+               What is the answer for this question 
+            </h1>
+            <div class="choice">
+                <p class="choice-text" data-number="1">1</p>
+            </div>
+            <div class="choice">
+                <p class="choice-text" data-number="2">2</p>
+            </div>
+            <div class="choice">
+                <p class="choice-text" data-number="3">3</p>
+                
+            </div>
+            <div class="choice">
+                <p class="choice-text" data-number="4">4</p>
+                
+            </div>
+            </main>
+            <aside class="asideL">
+                <a id="restart" href="quiz.html">
+                    <img id="logo" src="images/restart.jpg">
+                </a>
+                <p id="progresstext">question</p>
+                <div id="progressbar">
+                    <div id="bar"></div>
+                </div>
+            </aside>
+            <aside class="asideR">
+                <img id="play_audio" onclick="countdown_play()" src="images/audio_off.png">
+                <h1 id="timer">5</h1>
+                <p id ="test" onClick ="colour();">score</p>
+                <h1 id="score">0</h1>
+            </aside>
+        </div>
+        <footer class="footer">contact 40428070@live.napier.ac.uk</footer>
+        <!-- Write your comments here 
+        <p id="bob" onClick ="checkdata();" data-number="3">bob2</p>
+        <p id="bob" onClick ="checkdata();" data-number=2>bob</p>
+        -->
+        <script  src="javascript/quiz.js"></script>
+    </body>
+</html>
